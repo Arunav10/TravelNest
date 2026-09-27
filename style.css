@@ -1,0 +1,584 @@
+/* =========================
+   BASIC SETTINGS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f7f6;
+
+    color: #222;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 8%;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 25px;
+
+    font-weight: bold;
+
+    color: #222;
+}
+
+.logo span {
+    color: #168c68;
+}
+
+.nav-links {
+    display: flex;
+
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+
+    color: #333;
+
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #168c68;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.45),
+            rgba(0,0,0,0.55)
+        ),
+        url("https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+
+    padding: 20px;
+}
+
+.welcome {
+    letter-spacing: 4px;
+
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 70px;
+
+    margin: 10px 0;
+}
+
+.hero h1 span {
+    color: #62d9a9;
+}
+
+.hero h2 {
+    margin-bottom: 15px;
+}
+
+.hero-content > p:not(.welcome) {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.button,
+button {
+    display: inline-block;
+
+    background: #168c68;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 24px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.button:hover,
+button:hover {
+    background: #107052;
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.section {
+    text-align: center;
+
+    padding: 70px 8%;
+}
+
+.section h2,
+.latest h2 {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.intro {
+    color: #666;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.feature {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.08);
+}
+
+.feature:hover {
+    transform: translateY(-3px);
+}
+
+.icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+.feature p {
+    color: #666;
+}
+
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.latest {
+    background: #eaf3ef;
+
+    text-align: center;
+
+    padding: 70px 8%;
+}
+
+.destination-container {
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card,
+.destination-card,
+.blog-card {
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.08);
+}
+
+.card:hover,
+.destination-card:hover,
+.blog-card:hover {
+    transform: translateY(-4px);
+}
+
+.card img,
+.destination-card img,
+.blog-card img {
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.card-content,
+.destination-info,
+.blog-content {
+    padding: 22px;
+}
+
+.card-content small,
+.destination-info small,
+.blog-content small {
+    color: #168c68;
+
+    font-weight: bold;
+}
+
+.card-content h3,
+.destination-info h2,
+.blog-content h2 {
+    margin: 8px 0;
+}
+
+.card-content p,
+.destination-info p,
+.blog-content p {
+    color: #666;
+}
+
+.card-content a {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #168c68;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.page-title {
+    text-align: center;
+
+    padding: 70px 20px;
+
+    background: #eaf3ef;
+}
+
+.page-title h1 {
+    font-size: 45px;
+
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #666;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-box {
+    text-align: center;
+
+    padding: 35px 20px;
+}
+
+.search-box input {
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    outline: none;
+
+    border-color: #168c68;
+}
+
+
+/* =========================
+   DESTINATION PAGE
+========================= */
+
+.destinations {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 20px 20px 70px;
+}
+
+.destination-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+.destination-info button {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   BLOG PAGE
+========================= */
+
+.blog-section {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 20px;
+}
+
+.blog-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.blog-content button {
+    margin-top: 15px;
+}
+
+.date {
+    font-size: 13px;
+
+    color: #999 !important;
+
+    margin: 8px 0;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 70px 20px;
+}
+
+.contact-box {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 50px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 4px 15px rgba(0,0,0,0.08);
+}
+
+.contact-text h2 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+.contact-text p {
+    color: #666;
+
+    margin: 20px 0;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-family: Arial;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+
+    border-color: #168c68;
+}
+
+form button {
+    width: 100%;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    padding: 35px;
+
+    background: #17221e;
+
+    color: white;
+}
+
+footer .logo {
+    color: white;
+}
+
+footer p {
+    color: #bbb;
+
+    margin-top: 8px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .features,
+    .destination-container,
+    .destination-grid,
+    .blog-grid,
+    .contact-box {
+        grid-template-columns: 1fr;
+    }
+
+    .page-title h1 {
+        font-size: 35px;
+    }
+
+}
